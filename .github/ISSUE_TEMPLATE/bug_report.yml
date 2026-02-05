@@ -1,0 +1,82 @@
+name: Bug Report
+description: Report a bug, crash, or unexpected behavior
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+        Not all fields are required, but the more information you provide,
+        the easier it is to reproduce and fix the issue.
+
+  - type: input
+    attributes:
+      label: Minecraft Version
+      description: Which Minecraft version are you using?
+      placeholder: "e.g. 1.20.1"
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Mod / Modpack
+      description: Which mod or modpack is affected?
+      placeholder: "e.g. PlayerAnalytic, Hardrock Modpack"
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Environment
+      options:
+        - Singleplayer
+        - Multiplayer
+        - Dedicated Server
+        - Test Server
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Bug Description
+      description: What is wrong? What did you expect to happen instead?
+      placeholder: |
+        Describe the problem as clearly as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: How can the bug be reproduced?
+      placeholder: |
+        1. Start the game
+        2. Join the server
+        3. Do X
+        4. Bug occurs
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: What should normally happen?
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Logs / Crash Reports
+      description: |
+        Please attach logs, crash reports, or links (Pastebin, Gist, etc.).
+        This is extremely helpful for debugging.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: Any other information that might help?
+    validations:
+      required: false
