@@ -1,0 +1,59 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[FEATURE] "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your suggestion!
+        Feature requests are welcome, but please keep in mind:
+        - Not all features will be implemented
+        - Decisions are based on technical feasibility and project scope
+
+  - type: input
+    attributes:
+      label: Mod / Modpack
+      description: Which mod or modpack is this feature for?
+      placeholder: "e.g. PlayerAnalytic, Hardrock Modpack"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Feature Description
+      description: What would you like to see added or changed?
+      placeholder: |
+        Describe the feature as clearly as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Problem / Motivation
+      description: What problem does this feature solve? Why is it useful?
+      placeholder: |
+        Explain the use case or pain point.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Proposed Solution (optional)
+      description: If you already have an idea how this could work, describe it here.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Alternatives Considered
+      description: Are there existing workarounds or alternative solutions?
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: Screenshots, examples, or related issues.
+    validations:
+      required: false
